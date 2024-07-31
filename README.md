@@ -2,10 +2,24 @@
 Split long images into shorter images while avoiding cutting off text.
 
 调整以下参数避免切割到字体：
+
 `target_height = 2750`  # 目标分割高度
+
 `window_height = 10`  # 文本检测窗口的高度
+
 `text_threshold = 0.001`  # 文本检测阈值
+
 `step = 5`  # 如果检测到文本，向上移动的步长
+
+Adjust the following parameters to avoid cutting to the font:
+
+`Target_ceight=2750 ` # Target segmentation height
+
+`Window_ceight=10 ` # The height of the text detection window
+
+`Text_threshold=0.001 ` # Text detection threshold
+
+`Step=5 ` # Step up if text is detected
 ```python
 import os
 from PIL import Image
